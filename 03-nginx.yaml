@@ -1,5 +1,6 @@
 - name: installing nginx
   hosts: web #which hosts your ansible wants to connect
+  become: yes #takes root access
   tasks: #list of tasks which needs to be performed by ansible
   - name: install nginx server
     ansible.builtin.package:
