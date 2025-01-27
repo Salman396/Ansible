@@ -1,0 +1,5 @@
+- name: ping server
+  hosts: web #which hosts your ansible wants to connect
+  tasks: #list of tasks which needs to be performed by ansible
+  - name: Print the server
+    ansible.builtin.debug:
