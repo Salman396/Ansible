@@ -1,9 +1,7 @@
 - name: variables
   hosts: web
-  vars:
-    Name: "Salman"
-    Age: "25"
-    Born: "1999"
+  vars_files: 
+  - vars.yaml
   tasks:
     - name: Print the variables
       ansible.builtin.debug:
