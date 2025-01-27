@@ -3,11 +3,11 @@
   tasks: #list of tasks which needs to be performed by ansible
   - name: Play 01 Task 01
     ansible.builtin.debug:
-      msg: "This is from play 01 task 01"
+      print: "This is from play 01 task 01"
 
 - name: play 02
   hosts: web #which hosts your ansible wants to connect
   tasks: #list of tasks which needs to be performed by ansible
   - name: Play 02 Task 01
     ansible.builtin.debug:
-      msg: "This is from play 02 task 01"
+      print: "This is from play 02 task 01"
