@@ -1,6 +1,10 @@
 - name: variables
   hosts: web
+  vars: 
+    Name: "Salman"
+    Age: "25"
+    Born: "1999"
   tasks:
     - name: Print the variables
       ansible.builtin.debug:
-        msg: "My name: Salman age: 25 Born: 1999"
+        msg: "My name: {{Name}} Age: {{Age}} Born: {{Born}}"
