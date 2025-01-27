@@ -1,0 +1,6 @@
+- name: variables
+  hosts: web
+  tasks:
+    - name: Print the variables
+      ansible.builtin.debug:
+      msg: "My name: Salman age: 25 Born: 1999"
